@@ -1,0 +1,111 @@
+[
+    {
+        "actionName": "Flights",
+        "steps": [
+            {
+                "stepId": "STEP5",
+                "stepName": "Url: Search Flights Button",
+                "infFile": "t6.inf",
+                "time": 1618170505180
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t7.inf",
+                "time": 1618170505205
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Submit Data: reservations.pl",
+                "infFile": "t8.inf",
+                "time": 1618170505344
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t9.inf",
+                "time": 1618170505381
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Submit Data: reservations.pl_2",
+                "infFile": "t10.inf",
+                "time": 1618170505511
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t11.inf",
+                "time": 1618170505533
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Submit Data: reservations.pl_3",
+                "infFile": "t12.inf",
+                "time": 1618170505658
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t13.inf",
+                "time": 1618170505693
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "3.OpenPage_ticket_FindFlight",
+                "rawStartTime": 1618170505011,
+                "rawEndTime": 1618170505185,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0063970088958740238
+            },
+            {
+                "transactionName": "4.Create_ticket_FindFlight",
+                "rawStartTime": 1618170505247,
+                "rawEndTime": 1618170505355,
+                "thinkTime": 0.0,
+                "wastedTime": 0.004662752151489258
+            },
+            {
+                "transactionName": "5.Create_ticket_ChooseCost",
+                "rawStartTime": 1618170505419,
+                "rawEndTime": 1618170505514,
+                "thinkTime": 0.0,
+                "wastedTime": 0.004286766052246094
+            },
+            {
+                "transactionName": "6.Create_ticket_PaymentDetail",
+                "rawStartTime": 1618170505576,
+                "rawEndTime": 1618170505672,
+                "thinkTime": 0.0,
+                "wastedTime": 0.004387378692626953
+            }
+        ]
+    },
+    {
+        "actionName": "Itinerary",
+        "steps": [
+            {
+                "stepId": "STEP13",
+                "stepName": "Url: Itinerary Button",
+                "infFile": "t14.inf",
+                "time": 1618170505936
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t15.inf",
+                "time": 1618170505971
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "7.Go_to_Itinerary",
+                "rawStartTime": 1618170505750,
+                "rawEndTime": 1618170505952,
+                "thinkTime": 0.0,
+                "wastedTime": 0.006964445114135742
+            }
+        ]
+    }
+]

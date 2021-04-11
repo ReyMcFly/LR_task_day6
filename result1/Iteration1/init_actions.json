@@ -1,0 +1,47 @@
+[
+    {
+        "actionName": "vuser_init",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: webtours",
+                "infFile": "t2.inf",
+                "time": 1618170504819
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t3.inf",
+                "time": 1618170504840
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Submit Data: login.pl",
+                "infFile": "t4.inf",
+                "time": 1618170504962
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t5.inf",
+                "time": 1618170504982
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "1.Login_open_field",
+                "rawStartTime": 1618170504605,
+                "rawEndTime": 1618170504819,
+                "thinkTime": 0.0,
+                "wastedTime": 0.1113884449005127
+            },
+            {
+                "transactionName": "2.Login_fillin_fiels",
+                "rawStartTime": 1618170504841,
+                "rawEndTime": 1618170504962,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0065081119537353519
+            }
+        ]
+    }
+]
